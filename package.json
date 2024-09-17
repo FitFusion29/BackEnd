@@ -1,0 +1,19 @@
+{
+  "name": "backend",
+  "version": "0.0.0",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "npx nodemon"
+  },
+  "keywords": [],
+  "author": "Juan Manuel Arango, Stiven Henao",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "mongoose": "^8.6.2",
+    "nodemon": "^3.1.4"
+  }
+}
