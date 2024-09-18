@@ -3,7 +3,7 @@ import { UserFullName } from './UserFullName';
 import { UserEmail } from './UserEmail';
 import { UserPassword } from './UserPassword';
 
-export class User {
+export class user {
   id: UserId;
   fullName: UserFullName;
   email: UserEmail;
