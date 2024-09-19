@@ -1,7 +1,7 @@
-export class UserEmail {
+export class userEmail {
   value: string;
 
-  constructror(_email: string) {
+  constructor(_email: string) {
     if (this.validateEmail(_email)) {
       this.value = _email;
     } else {

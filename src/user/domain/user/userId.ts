@@ -1,8 +1,8 @@
-export class UserId {
+export class userId {
   value: number;
 
   constructor(public _value: number) {
-    if (UserId.isValid(_value)) {
+    if (userId.isValid(_value)) {
       this.value = _value;
     } else {
       throw new Error('Invalid user id');

@@ -1,4 +1,4 @@
-export class UserPassword {
+export class userPassword {
   value: string;
   constructor(public _password: string) {
     if (this.validatePassword(_password)) {

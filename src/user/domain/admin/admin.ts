@@ -1,8 +1,8 @@
 import { user } from "../user/user";
-import { UserId } from "../user/UserId";
-import { UserFullName } from "../user/UserFullName";
-import { UserEmail } from "../user/UserEmail";
-import { UserPassword } from "../user/UserPassword";
+import { UserId } from "../user/userId";
+import { UserFullName } from "../user/userFullName";
+import { UserEmail } from "../user/userEmail";
+import { UserPassword } from "../user/userPassword";
 import { AdminQuotes } from "./AdminQuotes";
 
 export class admin extends user {
