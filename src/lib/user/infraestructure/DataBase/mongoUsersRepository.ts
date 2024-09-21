@@ -24,7 +24,7 @@ export class mongoUsersRepository implements userRepository {
       id: user.id.value, // Estructura correcta de la entidad 'user'
       name: user.fullName.value,
       email: user.email.value,
-      password: user.password,
+      password: user.password.value,
     });
     await newUser.save();
   }
