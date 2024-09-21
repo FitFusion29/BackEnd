@@ -4,7 +4,7 @@ import { userEmail } from "../../../domain/user/userEmail";
 import { UserNotFoundError } from "../../../domain/user/userNotFoundError";
 
 
-export class getUserByEmail {
+export class userGetUserByEmail {
   constructor(private readonly userRepository: userRepository) { }
   async run(email: string): Promise<user> {
     const user = await this.userRepository.userGetUserByEmail(new userEmail(email));

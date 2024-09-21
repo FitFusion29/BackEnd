@@ -4,7 +4,7 @@ import { userId } from "../../../domain/user/userId";
 import { UserNotFoundError } from "../../../domain/user/userNotFoundError";
 
 
-export class GetUserById {
+export class userGetUserById {
   constructor(private readonly userRepository: userRepository) { }
   async run(id: number): Promise<user> {
     const user = await this.userRepository.userGetUserById(new userId(id));
