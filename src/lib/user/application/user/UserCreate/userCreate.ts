@@ -10,7 +10,7 @@ export class userCreate {
   constructor(private repository: userRepository) { }
 
   async run(
-    id: number,
+    id: string,
     fullName: string,
     email: string,
     password: string,

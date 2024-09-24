@@ -6,7 +6,7 @@ import { UserNotFoundError } from "../../../domain/user/userNotFoundError";
 
 export class userGetUserById {
   constructor(private readonly userRepository: userRepository) { }
-  async run(id: number): Promise<user> {
+  async run(id: string): Promise<user | null> {
     const user = await this.userRepository.userGetUserById(new userId(id));
     if (!user) {
       throw new UserNotFoundError('User not found');

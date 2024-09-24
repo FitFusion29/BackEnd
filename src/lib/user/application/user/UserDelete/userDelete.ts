@@ -3,7 +3,7 @@ import { userId } from '../../../domain/user/userId';
 
 export class userDelete {
   constructor(private userRepository: userRepository) { }
-  async run(id: number): Promise<void> {
+  async run(id: string): Promise<void> {
     await this.userRepository.userDelete(new userId(id));
   }
 }
